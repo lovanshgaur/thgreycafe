@@ -11,14 +11,9 @@
 </head>
 
 <body>
-    <div class="preloader" id="preloader">
-        <div class="ball"></div>
-        <img title="logo" src="assets/logo.png" class="preloader-img" id="preImg">
-    </div>
-    <div id="container">
-        <header>
 
-            <div class="overlay"></div>
+    <div id="container">
+        <header id="home">
             <nav id="nav-desktop">
                 <div id="logo">
                     <h1>The Grey Café</h1>
@@ -26,56 +21,106 @@
                 </div>
                 <div class="navbar">
                     <a href="#home" class="active">Home</a>
-                    <a href="#menu">Menu</a>
                     <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
                     <a href="#visit">Visit Us</a>
                 </div>
             </nav>
-
-            <div class="nav-btn"></div>
-            <nav id="nav-mobile" hidden></nav>
-
             <div class="hero">
                 <div class="hero-content">
-                    <h1>A Cup for Quiet Souls</h1>
+                    <h1>A Cup for Quiet Souls.</h1>
                     <h4>A calm corner of the city to slow down, sip, and breathe.</h4>
-                    <h4>We serve slow coffee and soft moments in a space made for stillness and gentle conversation.
-                    </h4>
-                    <button>View Menu</button>
-                    <button>Visit Us</button>
-                </div>
-            </div>
-            <div class="about-images">
-                <div class="about-gallery">
-
-                    <div class="about-btns">
-                        <div class="about-btn" id="prev"><i class="fa-solid fa-chevron-left"></i></div>
-                        <div class="about-btn" id="next"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="hero-content__buttons">
+                        <button>View Menu</button>
+                        <button>Visit Us</button>
                     </div>
-
-                    <div class="about-image">
-                        <img id="gallery-img" src="./product/1.png" alt="">
-                    </div>
-
                 </div>
-            </div>
-
-            <!-- <div class="about-img"><img src="assets/poster.png" alt=""></div> -->
-            <div class="about">
-                <h1>Our Space</h1>
-                <h4>The Grey Café was created for the thinkers and the quiet ones.
-                    A place to be unhurried. To breathe. To journal. To talk softly.
-                    We source small-batch beans and brew every cup with care and intention.</h4>
-                <h3>Stay as long as you need — time moves differently here. </h3>
+                <div class="hero-profile">
+                    <img src="assets/header.png" alt="">
+                </div>
             </div>
         </header>
-       
+        <main>
+            <section class="about" id="about">
+                <div class="section-heading">
+                    <h1>Our Space</h1>
+                </div>
+                <div class="about-text">
+                    <p>The Grey Café is made for the quiet ones — the thinkers, the readers, the people who like taking
+                        life a little slower. No rush, no noise, just warmth in the air and time that moves gently.
+                    </p>
+                    <p>Every cup here is brewed with intention. Small-batch beans, slow pours, warm light, soft
+                        corners. Stay for ten minutes or two hours — no one’s keeping track. This is your pause button.
+                    </p>
+                </div>
+            </section>
+            <section class="menu" id="menu">
+                <div class="menu-heading">
+                    <h1>Menu</h1>
+                </div>
+                <div class="menu-content">
+                    <h1>House Favorites</h1>
+                    <div class="menu-cards">
+                        <div class="menu-card">
+                            <div class="menu-card__profile"><img src="assets/hot.png" alt=""></div>
+                            <div class="menu-card__text">
+                                <h3>Hot Brew</h3>
+                                <h4> Slow-poured and rich, made to warm your hands and your head.</h4>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card__profile"><img src="assets/cold.png" alt=""></div>
+                            <div class="menu-card__text">
+                                <h3>Iced Coffee</h3>
+                                <h4> Chilled, smooth, and quiet. The kind of cold that doesn’t bite.</h4>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card__profile"><img src="assets/latte.png" alt=""></div>
+                            <div class="menu-card__text">
+                                <h3>Caffè Latte</h3>
+                                <h4> Soft, creamy, familiar like a small hug in a cup</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery" id="gallery">
+                <div class="section-heading">
+                    <h1>Inside the Café</h1>
+                </div>
+                <div class="gallery-cards">
+                    <div class="gallery-card">
+                        <div class="gallery-card__profile"><img src="assets/gallery.png" alt=""></div>
+                    </div>
+                    <div class="gallery-card">
+                        <div class="gallery-card__profile"><img src="assets/gallery2.png" alt=""></div>
+                    </div>
+                    <div class="gallery-card">
+                        <div class="gallery-card__profile"><img src="assets/gallery3.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+            <section class="map" id="visit">
+                <div class="map-content">
+                    <h1>Visit Us</h1>
+                    <h3>23 Maple Street, Sector 11</h3>
+                    <h4>Mon–Sun · 8:00 AM – 9:00 PM</h4>
+                </div>
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509507!2d144.9537363153169!3d-37.81720997975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAyLjAiUyAxNDTCsDU3JzE5LjQiRQ!5e0!3m2!1sen!2sus!4v0000000000000" loading="lazy"></iframe>
+                </div>
+            </section>
+            <section class="space"></section>
+        </main>
+        <footer><h1>The Grey Café © 2025</h1></footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="app.js"></script>
     <script>
-    
+
     </script>
 
 
